@@ -17,10 +17,13 @@ The goal of this project is to have a clean Travis CI build, with specs:
  * Code coverage: none
  * Source: one file, `main.cpp`
 
-The run is dependent on Travis:
+The program's behavior is dependent on where it is run:
 
- * If the program is run locally, it will say `Hello world, from a local computer`
- * When run on Travis CI, the program will say `Hello world, from Travis CI`
+ * Locally: it will say `Hello world, from a local computer`
+ * On Travis CI: it will say `Hello world, from Travis CI`
+
+Detecting if code is run on Travis can be done using `std::getenv("TRAVIS")`. On Travis CI `TRAVIS` is present in the environment,
+else it is (most probably) absent.
 
 More complex builds:
  * [none]
