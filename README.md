@@ -30,3 +30,4 @@ Equally complex builds:
 
 Less complex builds:
  * No Travis-dependent compilation: [travis_qmake_gcc_cpp14](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14)
+
