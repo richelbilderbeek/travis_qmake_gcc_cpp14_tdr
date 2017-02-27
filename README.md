@@ -15,12 +15,12 @@ The goal of this project is to have a clean Travis CI build, with specs:
  * C++ version: `C++14`
  * Libraries: `STL` only
  * Code coverage: none
- * Source: two file, `main_local.cpp` and `main_travis.cpp`
+ * Source: one file, `main.cpp`
 
-The compilation is dependent on Travis:
+The run is dependent on Travis:
 
- * Locally, `main_local.cpp` should be compiled, resulting in a program that says `Hello world, from a local computer`
- * When run on Travis CI, `main_travis.cpp` should be compiled, resulting in a program that says `Hello world, from Travis CI`
+ * If the program is run locally, it will say `Hello world, from a local computer`
+ * When run on Travis CI, the program will say `Hello world, from Travis CI`
 
 More complex builds:
  * [none]
@@ -29,4 +29,4 @@ Equally complex builds:
  * Travis-dependent compilation: [travis_qmake_gcc_cpp14_tdc](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_tdc)
 
 Less complex builds:
- * No Travis-dependent compilation: [travis_qmake_gcc_cpp14](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14)
+ * No Travis-dependent run: [travis_qmake_gcc_cpp14](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14)
