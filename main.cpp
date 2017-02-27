@@ -12,7 +12,8 @@ auto f_travis() noexcept
 }
 
 ///Detects if this code is run on a Travis CI server
-bool is_travis() {
+bool is_travis() noexcept
+{
   return std::getenv("TRAVIS");
 }
 
